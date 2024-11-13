@@ -14,7 +14,8 @@ This project explores a Netflix dataset using SQL to derive insights into conten
 
 ## Dataset
 this dataset is sourced from kaggle datasets
-![DATASET LINK](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)
+
+![DATASET LINK] (https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)
 
 ## Schemas
 ```
