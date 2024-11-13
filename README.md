@@ -229,6 +229,6 @@ This project provides an in-depth SQL analysis of the Netflix catalog to uncover
 14. Top Actors in Germany: Listed the top 10 actors with the highest number of appearances in German releases, showcasing actor popularity and collaboration patterns.
 15. Content Categorization by Keywords: Labeled releases as 'PG-13' or 'Rated-G' based on the presence of keywords in descriptions (e.g., "violence" or "nudity"), offering a simplified view of content maturity ratings.
 
-##Conclusion
+## Conclusion
 
 Through this analysis, we observed several trends and insights regarding Netflix’s approach to content creation and distribution. The platform’s extensive variety in genre and country-specific releases highlights its efforts to diversify its offerings to cater to different audiences worldwide. With a detailed breakdown of genres, ratings, and content lengths, this analysis helps identify Netflix’s strategic focus on high-engagement content, popular genres, and frequently featured actors. Future work could involve analyzing viewership data or user ratings to draw connections between content offerings and audience preferences on Netflix.
