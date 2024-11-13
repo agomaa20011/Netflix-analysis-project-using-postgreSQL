@@ -12,11 +12,11 @@ This project explores a Netflix dataset using SQL to derive insights into conten
 3. **Cast and Collaborations**: Uncovered frequently appearing actors and common collaborations across titles.
 4. **Country Analysis**: Focused on content released in Germany, identifying annual average releases and trends over time.
 
-##Dataset
+## Dataset
 this dataset is sourced from kaggle datasets
 ![DATASET LINK](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)
 
-##Schemas
+## Schemas
 ```
 CREATE TABLE Netflix (
     show_id VARCHAR(50),
@@ -34,15 +34,15 @@ CREATE TABLE Netflix (
 );
 ```
 
-##Problems and solutions
+## Problems and solutions
 
-###1. movies vs tv shows
+### 1. movies vs tv shows
 
 ```
 SELECT type_1, COUNT (*) AS total_releases FROM netflix GROUP BY type_1;
 ```
 
-###2. most common ratings
+### 2. most common ratings
 
 ```
 SELECT 
@@ -56,7 +56,7 @@ GROUP BY
     type_1, rating;
 ```
 
-###3. listing of all the movies released in a specific year
+### 3. listing of all the movies released in a specific year
 
 ```
 SELECT * FROM netflix 
@@ -66,7 +66,7 @@ WHERE
     release_year = 2020
 ```
 
-###4.Top 5 countries with the most releases 
+### 4.Top 5 countries with the most releases 
 
 ```
 SELECT 
@@ -78,7 +78,7 @@ ORDER BY 2 DESC
 LIMIT 5
 ```
 
-###5. longest movies
+### 5. longest movies
 
 ```
 SELECT * FROM Netflix
@@ -88,7 +88,7 @@ WHERE
     duration = (SELECT MAX(duration) FROM Netflix)
 ```
 
-###6. all the releases from in last 5 years
+### 6. all the releases from in last 5 years
 
 ```
 SELECT *
@@ -96,13 +96,13 @@ FROM Netflix
 WHERE TO_DATE(date_added, 'Month DD, yyyy') >= CURRENT_DATE - INTERVAL '5 years';
 ```
 
-###7. list all the movies\ tv shows by 'Martin Scorsese'
+### 7. list all the movies\ tv shows by 'Martin Scorsese'
 
 ```
 SELECT * FROM Netflix WHERE director ILIKE '%Martin Scorsese%';
 ```
 
-###8. list all the tv shows with more than 5 seasons
+### 8. list all the tv shows with more than 5 seasons
 
 ```
 SELECT *, 
@@ -113,7 +113,7 @@ WHERE
     AND SPLIT_PART(duration, ' ', 1)::INTEGER > 5;
 ```
 
-###9. the amount of movies/tv shows by genre
+### 9. the amount of movies/tv shows by genre
 
 ```
 SELECT
@@ -124,7 +124,7 @@ GROUP BY 1
 ORDER BY genre
 ```
 
-###10. calculate the average number of content released by Germany and the top 5 years with highst avergae content
+### 10. calculate the average number of content released by Germany and the top 5 years with highst avergae content
 
 ```
 SELECT 
@@ -138,7 +138,7 @@ ORDER BY 1
 LIMIT 5
 ```
 
-###11. list all the documentaries
+### 11. list all the documentaries
 
 ```
 SELECT * FROM Netflix
@@ -146,7 +146,7 @@ WHERE
     listed_in ILIKE '%Documentaries%'
 ```
 
-###12. list all the releases without a director
+### 12. list all the releases without a director
 
 ```
 SELECT * FROM Netflix
@@ -155,7 +155,7 @@ WHERE
 ORDER BY 1
 ```
 
-###13. list all the movies\tv shows that 'Adam Sandler' appeared in the last 10 years
+### 13. list all the movies\tv shows that 'Adam Sandler' appeared in the last 10 years
 
 ```
 SELECT * FROM Netflix
@@ -165,7 +165,7 @@ WHERE
 	release_year > EXTRACT(YEAR FROM CURRENT_DATE) - 10
 ```
 
-###14. list top 10 actors who have appeared in the highest number of releases in Germany
+### 14. list top 10 actors who have appeared in the highest number of releases in Germany
 
 ```
 SELECT 
@@ -178,7 +178,7 @@ ORDER BY 2 DESC
 LIMIT 10
 ```
 
-###15. Categorize the releases based on the presence of the keywords 'kill' and 'violence' for example 
+### 15. Categorize the releases based on the presence of the keywords 'kill' and 'violence' for example 
  in the description field. Label releases containing these keywords as 'PG-13' and all 
  other releases as 'Rated-G'. Count how many items fall into each category.
 
@@ -206,11 +206,11 @@ SELECT
 	GROUP BY 1
 	ORDER BY 1 ASC
 ```
-##Summary
+## Summary
 
 This project provides an in-depth SQL analysis of the Netflix catalog to uncover insights related to content distribution, genre trends, and actor involvement. Using PostgreSQL, we examined various features of the dataset, including content type (movies vs. TV shows), genre classifications, director and cast details, country-based release counts, and content ratings. This analysis helped illustrate how Netflix’s catalog has evolved over time and highlighted the factors that contribute to popular content on the platform.
 
-##Key Queries and Findings
+## Key Queries and Findings
 
 1. Movies vs. TV Shows: A breakdown of Netflix’s total releases into movies and TV shows, allowing us to observe the balance of content types.
 2. Content Ratings: Ranked common ratings for movies and TV shows, providing insights into the primary audiences Netflix targets.
