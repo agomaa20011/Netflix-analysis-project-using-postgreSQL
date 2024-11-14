@@ -237,12 +237,12 @@ Through this analysis, we observed several trends and insights regarding Netflix
 
 ### General look
 
-[Top Releasing Country]([./images/top_releasing_country.png](https://github.com/agomaa20011/Netflix-analysis-project-using-postgreSQL-Power-bi/blob/main/DASHBOARD.PNG))
+![Top Releasing Country]([./images/top_releasing_country.png](https://github.com/agomaa20011/Netflix-analysis-project-using-postgreSQL-Power-bi/blob/main/DASHBOARD.PNG))
 
 ### Releases between 1990 and 2009
 
-[Top Releasing Country](https://github.com/agomaa20011/Netflix-analysis-project-using-postgreSQL-Power-bi/blob/main/DASHBOARD%201990-2009.PNG)
+![Top Releasing Country](https://github.com/agomaa20011/Netflix-analysis-project-using-postgreSQL-Power-bi/blob/main/DASHBOARD%201990-2009.PNG)
 
 ### Releases between 1990 and 2022
 
-[Top Releasing Country](https://github.com/agomaa20011/Netflix-analysis-project-using-postgreSQL-Power-bi/blob/main/DASHBOARD%202010-2022.PNG)
+![Top Releasing Country](https://github.com/agomaa20011/Netflix-analysis-project-using-postgreSQL-Power-bi/blob/main/DASHBOARD%202010-2022.PNG)
