@@ -237,7 +237,7 @@ Through this analysis, we observed several trends and insights regarding Netflix
 
 ### General look
 
-![Top Releasing Country]([./images/top_releasing_country.png](https://github.com/agomaa20011/Netflix-analysis-project-using-postgreSQL-Power-bi/blob/main/DASHBOARD.PNG))
+![Top Releasing Country](https://github.com/agomaa20011/Netflix-analysis-project-using-postgreSQL-Power-bi/blob/main/DASHBOARD.PNG)
 
 ### Releases between 1990 and 2009
 
