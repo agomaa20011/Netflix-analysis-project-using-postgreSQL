@@ -232,3 +232,17 @@ This project provides an in-depth SQL analysis of the Netflix catalog to uncover
 ## Conclusion
 
 Through this analysis, we observed several trends and insights regarding Netflix’s approach to content creation and distribution. The platform’s extensive variety in genre and country-specific releases highlights its efforts to diversify its offerings to cater to different audiences worldwide. With a detailed breakdown of genres, ratings, and content lengths, this analysis helps identify Netflix’s strategic focus on high-engagement content, popular genres, and frequently featured actors. Future work could involve analyzing viewership data or user ratings to draw connections between content offerings and audience preferences on Netflix.
+
+## Dashboard
+
+### General look
+
+[Top Releasing Country]([./images/top_releasing_country.png](https://github.com/agomaa20011/Netflix-analysis-project-using-postgreSQL-Power-bi/blob/main/DASHBOARD.PNG))
+
+### Releases between 1990 and 2009
+
+[Top Releasing Country](https://github.com/agomaa20011/Netflix-analysis-project-using-postgreSQL-Power-bi/blob/main/DASHBOARD%201990-2009.PNG)
+
+### Releases between 1990 and 2022
+
+[Top Releasing Country](https://github.com/agomaa20011/Netflix-analysis-project-using-postgreSQL-Power-bi/blob/main/DASHBOARD%202010-2022.PNG)
